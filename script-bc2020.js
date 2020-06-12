@@ -27,3 +27,27 @@ function showRemaining() {
 }
 
 timer = setInterval(showRemaining, 1000);
+
+
+
+
+$.ajax({
+  url: 'bc2020.json',
+  cache: false
+})
+  .done(function( data ) {
+ 
+    let order = [ 
+      { name: "L", value: data.l},
+      { name: "M", value: data.m},
+      { name: "N", value: data.n}
+    ];
+
+    order.sort((a, b) => a.value - b.value);
+
+    $('.firstPlaceData').html(order[2].name + " " + order[2].value);
+    $('.secondPlaceData').html(order[1].name + " " + order[1].value);
+    $('.thirdPlaceData').html(order[0].name + " " + order[0].value);
+    $('.lastUpdateText').html('Last update: ' + data.ts);
+  });
+
