@@ -34,7 +34,6 @@ h1.bonus {
 @media screen and (min-width: 900px) {
 
   #wrapperDiv {
-    /* width: 50%; */
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
@@ -45,41 +44,31 @@ h1.bonus {
     margin-top: 14em;
   }
 
-  /* img/beer_100.png  img/beer_140.png  img/beer_192.png */
-
   .podium {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .secondPlaceText {
     font-size: 1.3em;
     font-weight: bold;
   }
+
   .firstPlaceText {
     font-size: 1.6em;
     font-weight: bold;
   }
+
   .thirdPlaceText {
     font-size: 0.9em;
     font-weight: bold;
-  }
-
-  .secondPlaceImg {
-  }
-
-  .secondPlaceImg > img {
-  }
-
-  .firstPlaceImg {
-  }
-
-  .firstPlaceImg > img {
-  }
-
-  .thirdPlaceImg {
-  }
-
-  .thirdPlaceImg > img {
   }
 
 }
@@ -87,12 +76,28 @@ h1.bonus {
 
 @media screen and (max-width: 900px) {
 
+  @supports (-webkit-text-stroke: 2px black) {
+    h1 {
+      -webkit-text-stroke: 2px black;
+      -webkit-text-fill-color: white;
+    }
+  }
+
   h1 {
     font-size: 1.1em;
     text-align: center;
   }
 
   .podium {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .secondPlaceText {
@@ -100,19 +105,13 @@ h1.bonus {
     margin-left: 6px;
     margin-top: 8px;
   }
+
   .firstPlaceText {
     font-size: 30px;
   }
+
   .thirdPlaceText {
     font-size: 22px;
-  }
-
-  .secondPlaceImg {
-  }
-  .firstPlaceImg {
-  }
-  .thirdPlaceImg {
-    margin-top: 8px;
   }
 
   .secondPlaceImg > img {
@@ -128,6 +127,10 @@ h1.bonus {
   h3 {
     font-size: 24px;
     text-align: center;
+  }
+
+  #countdownTitle {
+    margin-top: 68px;
   }
 
   .lastUpdateText {
