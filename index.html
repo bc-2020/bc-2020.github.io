@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#20262e">
-    <title>Beer Challange 2020</title>
+    <title>Beer Challange 2020 - FlexBox</title>
     <link rel="stylesheet" href="style-bc2020.css" type="text/css">
     <script src="jquery-3.1.1.min.js"></script>
     <script src="script-bc2020.js"></script>
@@ -24,14 +24,21 @@
       </h1>
       
       <div class="podium">
-        
-        <div class="secondPlaceText"><div class="secondPlaceData"></div></div>
-        <div class="firstPlaceText"><div class="firstPlaceData"></div></div>
-        <div class="thirdPlaceText"><div class="thirdPlaceData"></div></div>
 
-        <div class="secondPlaceImg"><img src="img/beer_140.png"></div>
-        <div class="firstPlaceImg"><img src="img/beer_192.png"></div>
-        <div class="thirdPlaceImg"><img src="img/beer_100.png"></div>
+        <div class="place">
+          <div class="secondPlaceText"><div class="secondPlaceData"></div></div>
+          <div class="secondPlaceImg"><img src="img/beer_140.png"></div>
+        </div>
+
+        <div class="place">
+          <div class="firstPlaceText"><div class="firstPlaceData"></div></div>
+          <div class="firstPlaceImg"><img src="img/beer_192.png"></div>
+        </div>
+
+        <div class="place">
+          <div class="thirdPlaceText"><div class="thirdPlaceData"></div></div>
+          <div class="thirdPlaceImg"><img src="img/beer_100.png"></div>
+        </div>
 
       </div> 
 
@@ -41,22 +48,6 @@
       <p class="lastUpdateText"></p>
     
     </div>
-
-    <script>
-        // $(".lastUpdateText").append("<br>window.innerWidth: " + window.innerWidth + "<br>");
-        // $(".lastUpdateText").append("window.innerHeight: " + window.innerHeight + "<br><br>");
-        // $(".lastUpdateText").append("screen.width: " + screen.width + "<br>");
-        // $(".lastUpdateText").append("screen.height: " + screen.height + "<br><br>");
-        // var ratio = window.devicePixelRatio;
-        // $(".lastUpdateText").append("window.devicePixelRatio: " + window.devicePixelRatio + "<br>");
-        // $(".lastUpdateText").append("screen.width * ratio: " + (screen.width*ratio) + "<br>");
-        // $(".lastUpdateText").append("screen.height * ratio: " + (screen.height*ratio) + "<br><br>");
-        
-        // $(".lastUpdateText").append("$(document).width(): " + $(document).width() + "<br>");
-        // $(".lastUpdateText").append("$(document).height(): " + $(document).height() + "<br><br>");
-        // $(".lastUpdateText").append("$(window).width(): " + $(window).width() + "<br>");
-        // $(".lastUpdateText").append("$(window).height(): " + $(window).height() + "<br><br>");
-    </script>
 
   </body>
 </html>
