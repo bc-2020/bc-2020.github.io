@@ -39,10 +39,10 @@ h1.bonus {
     text-align: center;
   }
 
-  .lastUpdateText {
+  /*.lastUpdateText {
     font-size:16px;
     margin-top: 14em;
-  }
+  }*/
 
   .podium {
     display: flex;
@@ -71,7 +71,91 @@ h1.bonus {
     font-weight: bold;
   }
 
+
+/* RESULT AND GIFS */
+
+  .result {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  img.gif {
+    width: 20%;
+  }
+
+  img.gif:first-child {
+    position: relative;
+    top: -50px;
+  }
+  
+  img.gif:nth-child(2) {
+    position: relative;
+    top: 40px;
+  }
+  
+  img.gif:nth-child(3) {
+    width: 30%;
+  }
+  
+  img.gif:last-child {
+    position: relative;
+    top: -120px;
+  }
 }
+
+
+.fadein3 {
+  opacity: 0;
+  animation: fadein 3s linear 3s 1 normal forwards;
+  -webkit-animation: fadein 3s linear 3s 1 normal forwards;
+}
+
+.fadein5 {
+  opacity: 0;
+  animation: fadein 2s linear 5s 1 normal forwards;
+  -webkit-animation: fadein 2s linear 5s 1 normal forwards;
+}
+
+.fadein6 {
+  opacity: 0;
+  animation: fadein 2s linear 6s 1 normal forwards;
+  -webkit-animation: fadein 2s linear 6s 1 normal forwards;
+}
+
+.fadein7 {
+  opacity: 0;
+  animation: fadein 2s linear 7s 1 normal forwards;
+  -webkit-animation: fadein 2s linear 7s 1 normal forwards;
+}
+
+.fadein8 {
+  opacity: 0;
+  animation: fadein 2s linear 8s 1 normal forwards;
+  -webkit-animation: fadein 2s linear 8s 1 normal forwards;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; visibility: visible; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; visibility: visible; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; visibility: visible; }
+}
+
+
+
+
 
 
 @media screen and (max-width: 900px) {
@@ -130,13 +214,45 @@ h1.bonus {
   }
 
   #countdownTitle {
-    margin-top: 68px;
+    margin-top: 34px;
   }
 
-  .lastUpdateText {
+  /*.lastUpdateText {
     text-align: center;
     font-size: 12px;
     margin-top: 16em;
+  }*/
+
+
+  .result {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  img.gif {
+    width: 40%;
+  }
+
+  img.gif:first-child {
+    position: relative;
+    top: -20px;
+  }
+  
+  img.gif:nth-child(2) {
+    position: relative;
+    top: -15px;
+    width: 42%;
+  }
+  
+  img.gif:nth-child(3) {
+    width: 50%;
+  }
+  
+  img.gif:last-child {
+    position: relative;
+    top: -60px;
   }
 
 }
