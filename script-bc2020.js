@@ -9,13 +9,10 @@ var timer;
 let result = document.getElementById('result');
 result.style.display = "none";
 
-let test = 0;
-
 function showRemaining() {
   var now = new Date();
   var distance = end.getTime() - now.getTime();
-  test++;
-  if (distance < 0 || test > 3) {
+  if (distance < 0) {
     clearInterval(timer);
     //document.getElementById('countdownTitle').style.fontSize = '1.7em';
     document.getElementById('countdownTitle').style.marginBottom = '40px';
